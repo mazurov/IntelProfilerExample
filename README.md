@@ -1,6 +1,7 @@
 Intel Profiler Simple Example
 ================================================================================
-This is a simple Gaudi algorithms for test  [Intel Profiler][profiler].
+S simple Gaudi algorithm to test  [Intel Profiler][profiler].
+
 CpuHungryAlg algorithms define 4 functions:
 
 ```cpp
@@ -10,7 +11,7 @@ CpuHungryAlg algorithms define 4 functions:
   double myatan();
 ```
 
-, that we would like to profile. Execution of this functions depends on
+, and  we would like to profile them. Execution of this functions depends on
 name of algorithm.
 
 ```cpp
