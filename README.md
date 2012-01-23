@@ -36,7 +36,7 @@ Installation
 2. Clone IntelProfilerExample repository to your project directory and compile it:
 
 ```sh
-$> cd ~/cmtuser/Gaudi_HEAD
+$> cd ~/cmtuser/Gaudi_v22r5
 $> git clone git://github.com/mazurov/IntelProfilerExample.git
 $> make -j
 ```
