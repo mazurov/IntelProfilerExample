@@ -10,7 +10,7 @@ CpuHungryAlg algorithms define 4 functions:
   double myatan();
 ```
 
-, which we would like to profile. Execution of this functions depends on
+, that we would like to profile. Execution of this functions depends on
 name of algorithm.
 
 ```cpp
