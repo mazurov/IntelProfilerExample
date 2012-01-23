@@ -1,4 +1,4 @@
-Intel Profiler Simple Example
+Intel Profiler Example
 ================================================================================
 Simple Gaudi algorithm to test  [Intel Profiler][profiler].
 
