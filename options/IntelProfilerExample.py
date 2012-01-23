@@ -12,19 +12,19 @@ from GaudiPython.Bindings import AppMgr
 from Configurables import IntelProfilerAuditor, CpuHungryAlg
 
 
-
 alg1 = CpuHungryAlg("Alg1")
 alg2 = CpuHungryAlg("Alg2")
 alg3 = CpuHungryAlg("Alg3")
+alg4 = CpuHungryAlg("Alg4")
 
-alg1.Loops = alg2.Loops = alg3.Loops = 5000000
+alg1.Loops = alg2.Loops = alg3.Loops = alg4.Loops = 5000000
 
 app = ApplicationMgr()
 app.EvtSel = 'NONE'
 app.EvtMax = 3
 
-subtop = Sequencer('SubSequence', Members = [alg1, alg2], StopOverride = True )
-top = Sequencer('TopSequence', Members = [subtop, alg3], StopOverride = True )
+subtop = Sequencer('SubSequence', Members = [alg1, alg2, alg3], StopOverride = True )
+top = Sequencer('TopSequence', Members = [subtop, alg4], StopOverride = True )
 
 app.TopAlg += [top]
 
@@ -33,8 +33,8 @@ profiler.OutputLevel = DEBUG
 profiler.StartFromEventN = 1
 profiler.StopAtEventN = 2
 profiler.ComponentsForTaskTypes = []
-profiler.IncludeAlgorithms = ["TopSequence"]
-#profiler.ExcludeAlgorithms = []
+profiler.IncludeAlgorithms = ["SubSequence"]
+profiler.ExcludeAlgorithms = ["Alg2"]
 AuditorSvc().Auditors +=  [profiler]
-#gaudi.addAlgorithm( alg2 )
+
 app.AuditAlgorithms = True
