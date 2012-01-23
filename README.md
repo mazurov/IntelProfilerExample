@@ -48,9 +48,9 @@ $> intelprofiler -o ~/profiler IntelProfilerExample/options/IntelProfilerExample
 ```
 At the end you should see something like that:
 
-```
+```terminal
 ...
-ntelProfilerAu...   INFO Start profiling (event #1)
+IntelProfilerAu...   INFO Start profiling (event #1)
 IntelProfilerAu...  DEBUG   Skip component TopSequence
 IntelProfilerAu...  DEBUG     Start profiling component TopSequence SubSequence
 IntelProfilerAu...  DEBUG     Start event type 2 for TopSequence SubSequence
@@ -133,7 +133,7 @@ ApplicationMgr( EvtMax = 3,
 
 , as a result we can see the following:
 
-```
+```terminal
 Function        Module  CPU Time
 CpuHungryAlg::mysin     libIntelProfilerExample.so      0.410
 CpuHungryAlg::myatan    libIntelProfilerExample.so      0.380
@@ -165,7 +165,7 @@ $> amplxe-cl -report hotspots -r ~/profiler/r000hs --group-by task-function
 
 Result:
 
-```
+```terminal
 Function        Task Type       CPU Time
 CpuHungryAlg::mysin     TopSequence SubSequence Alg1    0.410
 CpuHungryAlg::myatan    TopSequence SubSequence Alg3    0.380
