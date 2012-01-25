@@ -2,7 +2,7 @@ Intel Profiler Example
 ================================================================================
 Simple Gaudi algorithm to test  [Intel Profiler][profiler].
 
-[Installation tutorial][video].
+[A video guide to installing profiler package][video].
 [video]: http://youtu.be/h9tx00MGZTQ
 
 CpuHungryAlg algorithms define 4 functions:
