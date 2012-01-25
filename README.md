@@ -1,6 +1,7 @@
 Intel Profiler Example
 ================================================================================
 Simple Gaudi algorithm to test  [Intel Profiler][profiler].
+
 [Installation tutorial][video].
 [video]: http://youtu.be/h9tx00MGZTQ
 
